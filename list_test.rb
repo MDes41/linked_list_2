@@ -87,7 +87,11 @@ class ListTest < Minitest::Test
     assert_equal '1 1 1 1 2 2 2 2 3 3 3 3', list.all
   end
 
+  def test_finds_the_beats_and_returns_what_is_found
+    list = List.new('1 1 1 1 2 2 3 3 3 3')
 
+    assert_equal '2 2', list.find(4, 2)
+  end
 
 
 end

@@ -92,5 +92,9 @@ class List
   end
 
   def find(location, number)
+    pop_off = count - (location + number)
+    pop(pop_off)
+    pop(number)
+    gather_all_data(@current_popped)
   end
 end
