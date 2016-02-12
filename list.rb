@@ -89,6 +89,7 @@ class List
     current.next_node = @temp_head
     current = find_the_end(@head)
     current.next_node = @current_popped
+    gather_all_data(@head)
   end
 
   def find(location, number)

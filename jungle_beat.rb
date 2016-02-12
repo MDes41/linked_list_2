@@ -12,11 +12,15 @@ class JungleBeat
   end
 
   def append(data)
+    beats_added = data.split.count
     @list.append(data)
+    beats_added
   end
 
   def prepend(data)
+    beats_added = data.split.count
     @list.prepend(data)
+    beats_added
   end
 
   def all

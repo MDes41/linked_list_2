@@ -1,6 +1,8 @@
 require "minitest/autorun"
 require 'minitest/pride'
 require_relative 'node'
+require_relative 'test_helper'
+
 
 class NodeTest < Minitest::Test
   def test_that_node_has_data
